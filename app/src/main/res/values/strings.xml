@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">QuizRealMadrid</string>
+    <string name="logo"></string>
+    <string name="header">Let\'s see how much you know about Real Madrid ;)</string>
+
+    <string name="question_1">Question 1:</string>
+    <string name="question_1_text">Who was the club president with the \'galactico\' dream? </string>
+    <string name="question_1_hint">enter full name here</string>
+
+    <string name="question_2">Question 2:</string>
+    <string name="question_2_text">Which of these players is currently playing in real Madrid?</string>
+    <string name="question_2_answer_1">Luis Figo</string>
+    <string name="question_2_answer_2">Cristiano Ronaldo</string>
+    <string name="question_2_answer_3">Robert Lewandowski</string>
+    <string name="question_2_answer_4">Isco</string>
+    <string name="question_2_answer_5">Lionel Messi</string>
+
+    <string name="question_3">Question 3:</string>
+    <string name="question_3_text">Who was the first \'galactico\' signing? </string>
+    <string name="question_3_answer_1">Zinedine Zidane</string>
+    <string name="question_3_answer_2">David Beckham</string>
+    <string name="question_3_answer_3">Luis Figo</string>
+
+    <string name="question_4">Question 4:</string>
+    <string name="question_4_text">In what year were Real Madrid formed? </string>
+    <string name="question_4_answer_1">1905</string>
+    <string name="question_4_answer_2">1902</string>
+    <string name="question_4_answer_3">1910</string>
+
+    <string name="score">Show Score</string>
+</resources>
