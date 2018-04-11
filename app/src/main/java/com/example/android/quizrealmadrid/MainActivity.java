@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     final View.OnClickListener showScoreButtonOnClickListener = new View.OnClickListener() {
         public void onClick(final View v) {
             checkAllAnswers();
-            Toast.makeText(MainActivity.this, "Your score is " + endScore  + "/4 correct answers",
+            Toast.makeText(MainActivity.this, "Your score is " + endScore + "/4 correct answers",
                     Toast.LENGTH_LONG).show();
             resetScore();
         }
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        showScore = (Button) findViewById(R.id.score_button);
+        showScore = findViewById(R.id.score_button);
         showScore.setOnClickListener(showScoreButtonOnClickListener);
     }
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     //Check answer for question 1
 
     private void checkQuestionOne() {
-        EditText questionOneEditText = (EditText) findViewById(R.id.question_1_edit_text);
+        EditText questionOneEditText = findViewById(R.id.question_1_edit_text);
         String questionOneAnswer = questionOneEditText.getText().toString();
         String rightAnswer = "florentino perez";
         if (questionOneAnswer.toLowerCase().equals(rightAnswer)) {
@@ -49,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkQuestionTwo() {
 
-        CheckBox checkBoxQuestionTwoAnswerOne = (CheckBox) findViewById(R.id.question_2_answer_1);
-        CheckBox checkBoxQuestionTwoAnswerTwo = (CheckBox) findViewById(R.id.question_2_answer_2);
-        CheckBox checkBoxQuestionTwoAnswerThree = (CheckBox) findViewById(R.id.question_2_answer_3);
-        CheckBox checkBoxQuestionTwoAnswerFour = (CheckBox) findViewById(R.id.question_2_answer_4);
-        CheckBox checkBoxQuestionTwoAnswerFive = (CheckBox) findViewById(R.id.question_2_answer_5);
+        CheckBox checkBoxQuestionTwoAnswerOne = findViewById(R.id.question_2_answer_1);
+        CheckBox checkBoxQuestionTwoAnswerTwo = findViewById(R.id.question_2_answer_2);
+        CheckBox checkBoxQuestionTwoAnswerThree = findViewById(R.id.question_2_answer_3);
+        CheckBox checkBoxQuestionTwoAnswerFour = findViewById(R.id.question_2_answer_4);
+        CheckBox checkBoxQuestionTwoAnswerFive = findViewById(R.id.question_2_answer_5);
 
         Boolean answerOneChecked = checkBoxQuestionTwoAnswerOne.isChecked();
         Boolean answerTwoChecked = checkBoxQuestionTwoAnswerTwo.isChecked();
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkQuestionThree() {
 
-        RadioButton questionThreeAnswerThree = (RadioButton) findViewById(R.id.question_3_answer_3);
+        RadioButton questionThreeAnswerThree = findViewById(R.id.question_3_answer_3);
         boolean isQuestionThreeAnswerThree = questionThreeAnswerThree.isChecked();
         if (isQuestionThreeAnswerThree) {
             endScore += 1;
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     //Check answer for question 4
 
     private void checkQuestionFour() {
-        RadioButton questionFourAnswerTwo = (RadioButton) findViewById(R.id.question_4_answer_2);
+        RadioButton questionFourAnswerTwo = findViewById(R.id.question_4_answer_2);
         boolean isQuestionFourAnswerTwo = questionFourAnswerTwo.isChecked();
         if (isQuestionFourAnswerTwo) {
             endScore += 1;
